@@ -44,10 +44,17 @@
     <Compile Include="GridUnlock.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Include="GridUnlockPoint.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GridUnlockPoint.Designer.cs">
+      <DependentUpon>GridUnlockPoint.cs</DependentUpon>
+    </Compile>
     <Compile Include="Key.cs" />
     <Compile Include="KeyPoint.cs" />
     <Compile Include="KeyPointCollection.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UnlockEventArg.cs" />
     <Compile Include="Utility\KeyEncrypt.cs" />
     <Compile Include="Utility\KeyGenerator.cs" />
   </ItemGroup>

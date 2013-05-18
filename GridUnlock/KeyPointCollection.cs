@@ -16,7 +16,7 @@ namespace GridUnlock
         {
             if (!Contains(item))
             {
-                Add(item);
+                base.Add(item);
             }
             else
             {

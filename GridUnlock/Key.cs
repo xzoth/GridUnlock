@@ -12,18 +12,12 @@ namespace GridUnlock
     /// <summary>
     /// 钥
     /// </summary>
-    public class Key : INotifyPropertyChanged
+    public class Key
     {
-        public TimeSpan TimeSpamp
+        public Key()
         {
-            get;
-            internal set;
-        }
-
-        public KeyPointCollection Items
-        {
-            get;
-            private set;
+            Items = new KeyPointCollection();
+            TimeSpamp = new TimeSpan(DateTime.Now.Ticks);
         }
 
         public static bool operator ==(Key source, Key target)
@@ -63,15 +57,16 @@ namespace GridUnlock
             return this.Items.GetHashCode();
         }
 
-        protected void OnPropertyChanged(string propertyName)
+        public TimeSpan TimeSpamp
         {
-            PropertyChangedEventHandler handler = PropertyChanged;
-            if (handler != null)
-            {
-                handler(this, new PropertyChangedEventArgs(propertyName));
-            }
+            get;
+            internal set;
         }
 
-        public event PropertyChangedEventHandler PropertyChanged;
+        public KeyPointCollection Items
+        {
+            get;
+            private set;
+        }
     }
 }

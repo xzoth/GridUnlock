@@ -28,20 +28,36 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.gridUnlock1 = new GridUnlock.GridUnlock();
             this.SuspendLayout();
+            // 
+            // gridUnlock1
+            // 
+            this.gridUnlock1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.gridUnlock1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.gridUnlock1.GridUnlockStyle = GridUnlock.GridUnlockStyle.SixteenKeyPoint;
+            this.gridUnlock1.Location = new System.Drawing.Point(204, 80);
+            this.gridUnlock1.Name = "gridUnlock1";
+            this.gridUnlock1.Size = new System.Drawing.Size(150, 150);
+            this.gridUnlock1.TabIndex = 0;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(360, 257);
+            this.ClientSize = new System.Drawing.Size(642, 371);
+            this.Controls.Add(this.gridUnlock1);
+            this.DoubleBuffered = true;
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
 
         }
 
         #endregion
+
+        private GridUnlock.GridUnlock gridUnlock1;
     }
 }
 
