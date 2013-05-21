@@ -50,6 +50,7 @@
     <Compile Include="GridUnlockPoint.Designer.cs">
       <DependentUpon>GridUnlockPoint.cs</DependentUpon>
     </Compile>
+    <Compile Include="GridUnlockPointCollection.cs" />
     <Compile Include="Key.cs" />
     <Compile Include="KeyPoint.cs" />
     <Compile Include="KeyPointCollection.cs" />

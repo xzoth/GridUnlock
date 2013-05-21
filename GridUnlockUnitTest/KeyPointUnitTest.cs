@@ -62,8 +62,8 @@ namespace GridUnlockUnitTest
         [TestMethod]
         public void TestEqual()
         {
-            KeyPoint p1 = new KeyPoint() { X = 1, Y = 3 };
-            KeyPoint p2 = new KeyPoint() { X = 1, Y = 3 };
+            KeyPoint p1 = new KeyPoint(1, 3);
+            KeyPoint p2 = new KeyPoint(1, 3);
 
             Assert.AreEqual(p1, p2);
         }
@@ -71,8 +71,8 @@ namespace GridUnlockUnitTest
         [TestMethod]
         public void TestOperatorEqual()
         {
-            KeyPoint p1 = new KeyPoint() { X = 1, Y = 3 };
-            KeyPoint p2 = new KeyPoint() { X = 1, Y = 3 };
+            KeyPoint p1 = new KeyPoint(1, 3);
+            KeyPoint p2 = new KeyPoint(1, 3);
 
             Assert.IsTrue(p1 == p2);
         }
@@ -80,8 +80,8 @@ namespace GridUnlockUnitTest
         [TestMethod]
         public void TestOperatorNotEqual()
         {
-            KeyPoint p1 = new KeyPoint() { X = 1, Y = 3 };
-            KeyPoint p2 = new KeyPoint() { X = 4, Y = 9 };
+            KeyPoint p1 = new KeyPoint(1, 3);
+            KeyPoint p2 = new KeyPoint(4, 9);
 
             Assert.IsTrue(p1 != p2);
         }

@@ -14,22 +14,44 @@ namespace GridUnlock
     public class KeyPoint : INotifyPropertyChanged
     {
         public const string CONST_PROPERTY_NAME_X = "X";
+        private int x = 0;
+        [DefaultValue(0), Browsable(true), Category(""), Description("")]
         public int X
         {
-            get;
-            set;
+            get
+            {
+                return x;
+            }
+            set
+            {
+                if (x != value)
+                {
+                    x = value;
+                    OnPropertyChanged(CONST_PROPERTY_NAME_X);
+                }
+            }
         }
 
         public const string CONST_PROPERTY_NAME_Y = "Y";
+        [DefaultValue(0), Browsable(true), Category(""), Description("")]
+        private int y = 0;
         public int Y
         {
-            get;
-            set;
+            get
+            {
+                return y;
+            }
+            set
+            {
+                if (y != value)
+                {
+                    y = value;
+                    OnPropertyChanged(CONST_PROPERTY_NAME_Y);
+                }
+            }
         }
 
-        public KeyPoint() { }
-
-        public KeyPoint(int x, int y) 
+        public KeyPoint(int x, int y)
         {
             this.X = x;
             this.Y = y;

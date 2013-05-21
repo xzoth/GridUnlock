@@ -11,7 +11,7 @@ namespace GridUnlock.Common
     /// CollectionBase 泛型集合基类
     /// </summary>
     /// <typeparam name="T">泛型类型</typeparam>
-    public abstract class CollectionBase<T> : IList<T>, IList where T : class
+    public class CollectionBase<T> : IList<T>, IList where T : class
     {
         private List<T> items = new List<T>();
 

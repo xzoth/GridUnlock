@@ -19,7 +19,13 @@ namespace DemoLauncher
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            
         }
+
+        //Application.DoEvents();
+        //    this.BeginInvoke(new MethodInvoker(delegate
+        //    {
+        //        label1.Text = gridUnlockPoint1.IsOn.ToString();
+        //    }
+        //    ));
     }
 }

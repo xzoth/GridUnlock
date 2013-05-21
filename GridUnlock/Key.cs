@@ -36,7 +36,7 @@ namespace GridUnlock
 
             bool isEqula = false;
 
-            if (this.Items.Count >= GridUnlock.MinKeyPoint && this.Items.Count == target.Items.Count)
+            if (this.Items.Count == target.Items.Count)
             {
                 for (int i = 0; i < this.Items.Count; i++)
                 {

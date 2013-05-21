@@ -36,9 +36,10 @@
             this.gridUnlock1.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.gridUnlock1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.gridUnlock1.GridUnlockStyle = GridUnlock.GridUnlockStyle.SixteenKeyPoint;
-            this.gridUnlock1.Location = new System.Drawing.Point(204, 80);
+            this.gridUnlock1.Location = new System.Drawing.Point(12, 21);
+            this.gridUnlock1.MinKeyPoint = 5;
             this.gridUnlock1.Name = "gridUnlock1";
-            this.gridUnlock1.Size = new System.Drawing.Size(150, 150);
+            this.gridUnlock1.Size = new System.Drawing.Size(244, 224);
             this.gridUnlock1.TabIndex = 0;
             // 
             // Form1

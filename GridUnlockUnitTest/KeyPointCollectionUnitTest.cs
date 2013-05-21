@@ -12,8 +12,8 @@ namespace GridUnlockUnitTest
         {
             KeyPointCollection list = new KeyPointCollection();
 
-            KeyPoint p1 = new KeyPoint() { X = 1, Y = 2 };
-            KeyPoint p2 = new KeyPoint() { X = 2, Y = 1 };
+            KeyPoint p1 = new KeyPoint(1, 2);
+            KeyPoint p2 = new KeyPoint(2, 1);
 
             list.Add(p1);
             list.Add(p2);
@@ -26,8 +26,8 @@ namespace GridUnlockUnitTest
         {
             KeyPointCollection list = new KeyPointCollection();
 
-            KeyPoint p1 = new KeyPoint() { X = 1, Y = 2 };
-            KeyPoint p2 = new KeyPoint() { X = 1, Y = 2 };
+            KeyPoint p1 = new KeyPoint(1, 2);
+            KeyPoint p2 = new KeyPoint(1, 2);
 
             list.Add(p1);
             list.Add(p2);
